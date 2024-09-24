@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vishwajeet Valse} \\ \vspace{1pt}
+    \small +918010188055 $|$ \href{mailto:vishwajeetwalse9767@gmail.com}{\underline{vishwajeetwalse9767@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/vishwajeet-valse-a17a94253}{\underline{linkedin.com/in/vishwajeet-valse}} $|$
+    \href{https://github.com/vishwajeet1729}{\underline{github.com/vishwajeet1729}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Nagpur}{Aug. 2022 -- May 2026}
+      {Bachelor of Technology in Computer Science and Engineering}{CGPA:8.5}
+    \resumeSubheading
+      {Dayanand Junior Science College, Latur (Maharashtra) }{Aug. 2020 -- May 2022  }
+      {Class XII(PCM) Maharashtra Higher Secondary Board }{ 82\%}
+
+       \resumeSubheading
+         {Sane Guruji HIgh School, Latur (Maharashtra) }{Aug. 2019 -- May 2020  }
+      {Class X Maharashtra State Board  }{ 96.20\%}
+  \resumeSubHeadingListEnd
+
+  
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Licence Server} $|$ \emph{ReactJs, NodeJs, TypeScript, PostgreSQL ,EcpressJs}}{Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a License Management System using Node.js and Express.js, generating \textbf{UUID-}based license keys and managing license activations with JWT. }
+            \resumeItem{Developed secure\textbf{ RESTful APIs} for license validation, utilizing public-private key\textbf{ cryptography} to ensure client-side and server-side license verification. }
+            \resumeItem{Integrated\textbf{ PayPal} for payment processing, enabling automated license issuance and renewal based on successful transactions. }
+            \resumeItem{Built a scalable database structure using \textbf{PostgreSQL } for storing license data, including expiration handling, machine ID tracking, and user limitations }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Personal Finance Tracker} $|$ \emph{ReactJs, NodeJs, TypeScript,  ExpressJs,MongoDB}}{May 2024}
+          \resumeItemListStart
+            \resumeItem{Provides real-time financial tracking to enhance visibility into spending and budgeting }
+            \resumeItem{Supports multiple devices for seamless access and management anywhere, anytime   }
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Used robust \textbf{authentication and authorization} mechanisms  using \textbf{Clerk} }
+          \resumeItemListEnd
+
+
+       {\textbf{Intershaala Automator} $|$ \emph{JavaScript, Puppeter, CSS ,HTML}}{~~~~~~~~ ~ ~~~~~~~~~~~~~~
+       ~   
+       ~~ ~~~~ ~~~~~~~~~~~~Jun 2023}
+          \resumeItemListStart
+          
+            \resumeItem{Developed an automation tool using \textbf{Puppeteer} to streamline the internship application process. . }
+        
+    \resumeItem{The tool reduces the time candidates spend manually applying for internships by automating repetitive tasks. }
+            \resumeItem{Enhances efficiency by filling out forms and submitting applications with minimal use input.  }
+
+    \resumeSubHeadingListEnd
+   
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages }{: C/C++,Java,Python, SQL , JavaScript,} \\
+     \textbf{Technologies/Frameworks }{: MySQL,  ReactJs, C++ STL, NodeJs, MongoDB } \\
+     \textbf{Developer Tools/Platforms }{: Git/Github, Visual Studio Code, Intellij Idea, Postman, AWS } \\
+     \textbf{Academic Coursework }{: DSA, DBMS, OOPs, Opearting System, Computer Network }
+    }}
+ 
+ \end{itemize}
+ 
+
+
+\section{Achievment}
+
+ \resumeItemListStart
+            \resumeItem{  Global Rank of  \textbf{813 }in\textbf{ LeetCode BiWeekly 313} out of 20K participants.}
+            \resumeItem{ \textbf{ Knight} (Max Rating: 1908) on Leetcode and Rated \textbf{Specialist} (Max Rating: 1470) on CodeForces .}
+            \resumeItem{Exercised a 600+ problems on various platform such as LeetCode, CodeForces}
+            \resumeItem{Achieved an All India Rank of \textbf{2685} in the \textbf{Codathon} organized by \textbf{NIT Bhopal}, demonstrating strong competitive programming abilities.  }
+          \resumeItemListEnd
+
+\section{Position OF Responsibility}
+ \resumeItemListStart
+            \resumeItem{ Member of the \textbf{Public Relations} team, actively involved in managing the \textbf{IIITN} technical fest, \textbf{Tantrfiesta}, as part of the public relation team. }
+
+             \resumeItem{ Part of \textbf{Corporate Team} in the\textbf{ E-SUMMIT} orgnised by the E-cell (Entrepreneurship Cell  of IIITN)}
+      
+          \resumeItemListEnd
+
+          
+ 
+
+%-------------------------------------------
+\end{document}
